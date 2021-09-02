@@ -4,9 +4,24 @@
 }
 
 body{
-    /* background-image: linear-gradient(111.7deg,#a529b9 19.9%,#50b1e1 95%); */
-    background-image: linear-gradient(to right,#a529b9 19.9%,#50b1e1 95%);
+    background-image: linear-gradient(111.7deg,#a529b9 19.9%,#50b1e1 95%);
+    background-attachment: fixed;
 }
+
+h1{
+    font-style: 'Lato';
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h1 svg{
+    width: 1rem;
+}
+
+h1 svg path{
+    fill:#3897f0
+}
+
 .container{
     max-width: 700px;
     margin: 0 auto;
@@ -21,11 +36,11 @@ header{
     text-align: center;
 
     font-family:'Lato';
-    font-weight: 600;
-
+    font-weight: 400;
 }
 
-img{
+header img{
+    height: 150px;
     width: 150px;
     border-radius: 100%;
 }
@@ -34,24 +49,26 @@ ul{
     display: flex;
     flex-direction: column;
 }
+
 li a{
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
-    height: 60px;
+    margin: 10px;
+    min-height: 60px;
     border-radius: 50px;
     
     border: solid 1px #7990D7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    font-weight:900;
+    font-weight:600;
 }
 
 li a:hover{
-    opacity: 0.5;
-    color: rgb(127, 253, 253);
+    color: rgb(164, 255, 255);
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 20px rgb(164, 255, 255);
 }
 
 footer{
@@ -59,11 +76,12 @@ footer{
     margin-bottom: 5px;
     text-align: center;
     font-family: 'Lato';
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 /* remover */
 li a img{
-    width: 20px;
-    margin-right: 10px;
+    display: none;
 }
+
+
