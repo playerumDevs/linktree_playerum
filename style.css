@@ -69,6 +69,10 @@ li a{
     font-weight:600;
 }
 
+li a.highlight{
+	background-color:#8fbc8ffa ;
+}
+
 li a:hover{
     color: rgb(164, 255, 255);
     font-size: 1.1rem;
